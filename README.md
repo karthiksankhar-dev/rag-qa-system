@@ -18,6 +18,7 @@ A powerful Retrieval Augmented Generation (RAG) application that combines real-t
 Before running this application, ensure you have:
 
 - Python 3.8 or higher
+- Anaconda distribution installed
 - [Ollama](https://ollama.ai/) installed and running
 - Google Serper API key
 - NVIDIA API key
