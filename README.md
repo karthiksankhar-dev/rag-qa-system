@@ -149,20 +149,6 @@ persist_directory = "./your-custom-db-path"
 ```
 
 
-## 📋 Requirements.txt
-
-```txt
-streamlit>=1.28.0
-langchain-community>=0.0.20
-langchain-ollama>=0.1.0
-langchain-nvidia-ai-endpoints>=0.1.0
-chromadb>=0.4.15
-google-search-results>=2.4.2
-wikipedia>=1.4.0
-langchain>=0.1.0
-```
-
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
