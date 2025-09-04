@@ -34,27 +34,15 @@ cd rag-qa-system
 ```
 
 
-### 2. Create Virtual Environment
+### 2. Create a conda Environment
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda create -n env_name python=3.8
+conda activate env_name
 ```
 
 
 ### 3. Install Dependencies
-
-```bash
-pip install streamlit
-pip install langchain-community
-pip install langchain-ollama
-pip install langchain-nvidia-ai-endpoints
-pip install chromadb
-pip install google-search-results
-pip install wikipedia
-```
-
-Or install from requirements file:
 
 ```bash
 pip install -r requirements.txt
@@ -63,8 +51,11 @@ pip install -r requirements.txt
 
 ### 4. Install and Setup Ollama
 
+
 ```bash
 # Install Ollama (visit https://ollama.ai/ for OS-specific instructions)
+# After installation on your machine, run
+ollama--version
 # Pull the required model
 ollama pull llama3.1
 ```
