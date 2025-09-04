@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ```bash
 # Install Ollama (visit https://ollama.ai/ for OS-specific instructions)
 # After installation on your machine, run
-ollama--version
+ollama --version
 # Pull the required model
 ollama pull llama3.1
 ```
@@ -63,7 +63,7 @@ ollama pull llama3.1
 
 ### 5. Setup API Keys
 
-Create a file named `id.py` in the project root directory:
+Edit the file named `id.py` in the project root directory:
 
 ```python
 # id.py
@@ -92,7 +92,7 @@ nvapi_key = "your_nvidia_api_key_here"
 ### 1. Start the Application
 
 ```bash
-streamlit run app.py
+streamlit run RAG.py
 ```
 
 
@@ -124,7 +124,7 @@ rag-qa-system/
 
 ### Customizing the LLM
 
-To use a different Ollama model, modify the `llm` initialization in `app.py`:
+To use a different Ollama model, modify the `llm` initialization in `RAG.py`:
 
 ```python
 llm = ChatOllama(model="your-preferred-model", temperature=0, streaming=True)
@@ -220,15 +220,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [NVIDIA](https://www.nvidia.com/) for embedding models
 
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-- Open an issue on GitHub
-- Check the troubleshooting section above
-- Review the official documentation for each technology used
-
-***
 
 **Note**: Make sure to keep your API keys secure and never share them publicly!
 
